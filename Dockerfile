@@ -7,4 +7,4 @@ COPY . /opt/web
 RUN npm install && \
     npm install nodemon -g
 
-CMD [ "nodemon",  "app/server.js"]
+CMD [ "nodemon",  "src/app/server.js"]

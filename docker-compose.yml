@@ -3,11 +3,11 @@ version: "3"
 services:
   web:
     build: 
-      context: ./src
+      context: ./
       dockerfile: Dockerfile
     image: hiroshisiq/express
     ports:
       - "3000:3000"
     volumes:
-      - ./src:/opt/web
+      - .:/opt/web
 
