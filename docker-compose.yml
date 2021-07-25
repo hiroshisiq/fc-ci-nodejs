@@ -1,7 +1,7 @@
 version: "3"  
 
 services:
-  node:
+  web:
     build: 
       context: ./src
       dockerfile: Dockerfile
@@ -9,5 +9,5 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - ./src/app:/opt/app
+      - ./src:/opt/web
 
