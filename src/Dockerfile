@@ -1,8 +1,8 @@
 FROM node:16-alpine
 
-WORKDIR /opt/src
+WORKDIR /opt/web
 
-COPY . /opt/src/
+COPY . /opt/web
 
 RUN npm install && \
     npm install nodemon -g
