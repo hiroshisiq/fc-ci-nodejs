@@ -1,0 +1,19 @@
+version: "3"  
+
+services:
+  web:
+    build: 
+      context: ./
+      dockerfile: Dockerfile
+    image: hiroshisiq/express
+    container_name: fc2-express
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/opt/web
+
+  redis:
+    image: redis:alpine
+    container_name: fc2-redis
+    ports:
+      - '6379:6379'
