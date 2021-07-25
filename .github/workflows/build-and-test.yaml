@@ -1,7 +1,6 @@
 on:
   pull_request:
-    branches:
-      - develop
+    branches: [main, develop]
 
 jobs:
   build-and-test:
